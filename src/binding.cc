@@ -24,6 +24,42 @@ using namespace node;
 
 namespace {
 
+using v8::Array;
+using v8::ArrayBuffer;
+using v8::Boolean;
+using v8::Context;
+using v8::EscapableHandleScope;
+using v8::Exception;
+using v8::Float64Array;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::FunctionTemplate;
+using v8::HandleScope;
+using v8::HeapStatistics;
+using v8::Integer;
+using v8::Isolate;
+using v8::Local;
+using v8::Locker;
+using v8::MaybeLocal;
+using v8::Message;
+using v8::Name;
+using v8::NamedPropertyHandlerConfiguration;
+using v8::Null;
+using v8::Number;
+using v8::Object;
+using v8::ObjectTemplate;
+using v8::Promise;
+using v8::PromiseRejectMessage;
+using v8::PropertyCallbackInfo;
+using v8::PropertyHandlerFlags;
+using v8::ScriptOrigin;
+using v8::SealHandleScope;
+using v8::String;
+using v8::TryCatch;
+using v8::Uint32Array;
+using v8::V8;
+using v8::Value; 
+  
 // used by the Int64 functions to determine whether to return a Number
 // or String based on whether or not a Number will lose precision.
 // http://stackoverflow.com/q/307179/376773
